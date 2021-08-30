@@ -1,0 +1,149 @@
+/* Havelock Fonts */
+
+@font-face {
+  font-family: 'Havelock Titling';
+  src: url('./fonts/HT/HavelockTitling-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: 'Havelock Titling';
+  src: url('./fonts/HT/HavelockTitling-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Havelock Titling';
+  src: url('./fonts/HT/HavelockTitling-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Havelock Titling';
+  src: url('./fonts/HT/HavelockTitling-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+/* Poppins */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/POPPINS/Poppins-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/POPPINS/Poppins-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/POPPINS/Poppins-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/POPPINS/Poppins-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+/* BNCringeSans */
+
+@font-face {
+  font-family: 'BN Cringe Sans';
+  src: url('./fonts/BN/BNCringeSans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: 'BN Cringe Sans';
+  src: url('./fonts/BN/BNCringeSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BN Cringe Sans';
+  src: url('./fonts/BN/BNCringeSans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'BN Cringe Sans';
+  src: url('./fonts/BN/BNCringeSans-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+.havelock-thin {
+  font-family: 'Havelock Titling';
+  font-weight: 300;
+}
+
+.havelock {
+  font-family: 'Havelock Titling';
+  font-weight: 400;
+}
+
+.havelock-medium {
+  font-family: 'Havelock Titling';
+  font-weight: 500;
+}
+
+.havelock-bold {
+  font-family: 'Havelock Titling';
+  font-weight: 600;
+}
+
+.poppins-thin {
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+.poppins {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.poppins-medium {
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.poppins-bold {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.cringe-thin {
+  font-family: 'BN Cringe Sans';
+  font-weight: 300;
+}
+
+.cringe {
+  font-family: 'BN Cringe Sans';
+  font-weight: 400;
+}
+
+.cringe-medium {
+  font-family: 'BN Cringe Sans';
+  font-weight: 500;
+}
+
+.cringe-bold {
+  font-family: 'BN Cringe Sans';
+  font-weight: 600;
+}

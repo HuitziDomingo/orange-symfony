@@ -1,0 +1,53 @@
+.membership-card {
+  width: 100%;
+  max-width: 370px;
+  border-radius: 6px;
+  padding-top: 6rem!important;
+}
+
+.membership-text {
+  font-size: 20px;
+}
+
+.membership-name {
+  font-size: 30px;
+}
+
+.register-band {
+  background-color: #3E403F;
+  color: #fff;
+}
+
+.register-btn {
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.register-title {
+  font-size: 30px;
+}
+
+.big-btn {
+  width: 100%;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgba(230,29,48,1) 9%, rgba(237,107,49,1) 100%);
+}
+
+.btn-obtener {
+  background: linear-gradient(90deg, rgba(230,29,48,1) 9%, rgba(237,107,49,1) 100%);
+  color: #fff;
+}
+
+.carousel-container-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.lead {
+  font-size: 25px;
+}

@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <header id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+            <div class="carousel-item bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container pt-5 pb-5">
+        <p class="my-5 poppins-bold start-disclaimer">A través de nuestras membresías podrás tener acceso a la información y reportes que necesitas: </p>
+        <div class="my-5 py-5 member-list row row-cols-1 row-cols-md-5">
+            <div class="member-item">
+                <img class="member_icon" src="{{asset('assets/img/member_icon.png')}}"/>
+                <div class="cringe member-text my-3">Información demográfica</div>
+            </div>
+            <div class="member-item">
+                <img class="member_icon" src="{{asset('assets/img/member_icon.png')}}"/>
+                <div class="cringe member-text my-3">Información socioeconómica</div>
+            </div>
+            <div class="member-item">
+                <img class="member_icon" src="{{asset('assets/img/member_icon.png')}}"/>
+                <div class="cringe member-text my-3">Equipamientos</div>
+            </div>
+            <div class="member-item">
+                <img class="member_icon" src="{{asset('assets/img/member_icon.png')}}"/>
+                <div class="cringe member-text my-3">Real Estate</div>
+            </div>
+            <div class="member-item">
+                <img class="member_icon" src="{{asset('assets/img/member_icon.png')}}"/>
+                <div class="cringe member-text my-3">Reportes específicos por zonas y por ciudad</div>
+            </div>
+        </div>
+        <p class="my-5 poppins-bold center-disclaimer">Conoce nuestras membresías y elige la que más se adapte a tus necesidades.</p>
+        <!-- Cards de precios -->
+        <div class="row row-cols-1 row-cols-md-3 my-5 py-5 text-center">
+
+        {% for membership in memberships %}
+                <div class="col">
+                    <div class="card membership-card shadow-sm p-5">
+                    <h4 class="havelock-bold membership-name">{{ membership.name }}</h4>
+                    <div>
+                        <ul class="list-unstyled my-4">
+                            <li class="cringe membership-text">{{ membership.description }}</li>
+                            <li class="cringe membership-text">{{ membership.periodicity }} {% if membership.periodicity|number_format > 1 %}meses{% else %}mes{% endif %}</li>
+                        </ul>
+                        <h1 class="pricing-card-title havelock-bold mb-5">${{ membership.price|number_format(2, '.', ',') }}</h1>
+                        <a href="{{ path('registrate', { 'id' : membership.id })}}" class="w-100 btn btn-lg btn-obtener rounded-pill poppins-bold">OBTENER</a>
+                    </div>
+                    </div>
+                </div>
+        {% endfor %}
+
+
+        </div>
+    </main>
+    <!-- Card de registro -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="register-band text-center p-5">
+                <div class="poppins-bold text-uppercase register-title">Regístrate ahora y disfruta de 15 días gratis</div>
+                <button class="btn btn-secondary register-btn rounded-pill poppins-bold mt-5 py-3">REGÍSTRATE</button>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <button class="btn big-btn btn-secondary my-5 rounded-pill p-3 poppins-bold">CÓNOCE COMO FUNCIONA</button>
+    </div>
+    
+    {{ include('footer.html.twig') }}
+
+{% endblock %}

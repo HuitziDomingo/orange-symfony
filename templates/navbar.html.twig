@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #3E403F;">
+    <div class="container">
+        <a class="navbar-brand" href="{{ path('index') }}"><img src="{{asset('assets/img/logo_2.png')}}"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item havelock-medium">
+                    <a class="nav-link fw-white" aria-current="page" href="{{ path('index') }}">HOME</a>
+                </li>
+                <li class="nav-item havelock-medium">
+                    <a class="nav-link fw-white" href="{{ path('nosotros') }}">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown l dropdown havelock-medium">
+                    <a class="nav-link fw-white dropdown-toggle"  href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" href="{{ path('productos') }}">PRODUCTOS</a>
+                    <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                        <li class="__hovernavred havelock-medium"><a class="dropdown-item " href="{{ path('membresias') }}">MEMBRESÍAS</a></li>
+                        
+                        <li class="havelock-medium"><a class="dropdown-item " href="{{ path('reportes') }}">REPORTES</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item havelock-medium">
+                    <a class="nav-link fw-white" href="{{ path('contacto') }}">CONTACTO</a>
+                </li>
+                <li class="nav-item havelock-medium">
+                    <a class="nav-link fw-white" href="#">REGISTRATE</a>
+                </li>
+                <li class="nav-item havelock-medium">
+                    <a class="nav-link fw-white" href="{{ path('sesion') }}">INICIAR SESION</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

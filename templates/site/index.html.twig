@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <header id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+            <div class="carousel-item bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container pt-5 pb-5 home-container">
+        <div class="card mb-5 p-5 __relative__top">
+            <div class="flx-aro">
+                <div class="col-md-4">
+                    <img src="{{asset("assets/img/img_header.png")}}" class="img-fluid" alt="imagen de relleno">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="fw-bolder mb-4 poppins-bold __title__index">GO DATA by Georesearch & Orange Investments</h3>
+                        <p class="card-text cringe">
+                            Es es una plataforma de inteligencia inmobiliaria que te permite visualizar en un click el panorama sociodemográﬁco e inmobiliario de cualquier ubicación en México. Detectamos oportunidades ocultas de desarrollo y generamos insights de mercado especíﬁcos para tu propiedad o zona de interés.
+                        </p>
+                        <p class="card-text cringe">
+                            A través de la alianza de GeoResearch y Orange Investments, podrás tener acceso a la información más detallada del mercado. Combinamos nuestro expertise como analistas de Real Estate junto con un fuerte equipo de Geointeligencia para otorgar la plataforma más solida de inteligencia inmobiliaria en México
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="mb-5 havelock-bold">beneficios</h3>
+        <div class="row row-cols-1 row-cols-md-3 text-center">
+            <div class="col">
+                <div class="__cont__card p-5">
+                    <div class="__cont__ele">
+                        <img class="mb-5" src="{{asset("assets/img/cards_index.png")}}" alt="">
+                        <p class="cringe text-center">
+                            Análisis en segundos del panorama sociodemográfico, inmobiliario y espacial de la zona de interés
+                            No cuentas con un terreno o activo? Nosotros te brindaos información para ubicar el sitio ideal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="__cont__card p-5">
+                    <div class="__cont__ele">
+                        <img class="mb-5" src="{{asset("assets/img/cards_index.png")}}" alt="">
+                        <p class="cringe text-center">
+                            Análisis en segundos del panorama sociodemográfico, inmobiliario y espacial de la zona de interés
+                            No cuentas con un terreno o activo? Nosotros te brindaos información para ubicar el sitio ideal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="__cont__card p-5">
+                    <div class="__cont__ele">
+                        <img class="mb-5" src="{{asset("assets/img/cards_index.png")}}" alt="">
+                        <p class="cringe text-center">
+                            Análisis en segundos del panorama sociodemográfico, inmobiliario y espacial de la zona de interés
+                            No cuentas con un terreno o activo? Nosotros te brindaos información para ubicar el sitio ideal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    {{ include('footer.html.twig') }}
+
+{% endblock %}

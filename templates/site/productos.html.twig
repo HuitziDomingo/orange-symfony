@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <main class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <form class="mx-auto w-50">
+                    <h2 class="mb-4">CUENTA</h2>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="text-left fw-bolder mb-1">Usuario</label>
+                        <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputemail" class="text-left fw-bolder mb-1">Correo</label>
+                        <input type="email" class="form-control" id="inputemail">
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="text-left fw-bolder mb-1">Contraseña</label>
+                        <span class="text-end">Cambiar</span>
+                        <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="col">
+                    <h2 class="mb-4">SUSCRIPCIÓN</h2>
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary bg-orange mx-auto rounded-pill">CERRAR SESIÓN</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+{% endblock %}

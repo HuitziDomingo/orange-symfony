@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <main class="container pt-5 pb-5">
+        <form class="mx-auto w-50 row">
+            <h2 class="mb-4 fw-black">CONTACTO</h2>
+            <P>Nombre</P>
+            <P>55 5555555</P>
+            <P>contacto@orange.com</P>
+            <h4 class="mt-3 fw-black">CONTÁCTANOS</h4>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <textarea name="" id="" cols="30" rows="10"class="form-control"></textarea>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="rounded-pill btn btn-primary bg-orange float-end">Contactar</button>
+            </div>
+        </form>
+    </main>
+    
+{{ include('footer.html.twig') }}
+
+{% endblock %}

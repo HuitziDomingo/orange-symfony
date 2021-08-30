@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <header id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+            <div class="carousel-item bg-membresias-1">
+                <div class="container carousel-container-item">
+					<div class="col-md-8">
+						<h1 class="display-4 fw-bold fw-white poppins-bold">GO DATA acceso rápido y conﬁable a las oportunidades de mercado</h1>
+                        <hr class="fw-white" />
+						<p class="lead my-4 fw-white cringe-medium">
+                            A través de nuestra plataforma podrás realizar análisis espaciales de  la zona de interés , visualizar datos y ubicaciones y tener un
+                            entendimiento claro del comportamiento en ella.
+						</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+					</div>
+				</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container pt-5 pb-5">
+        <p class="my-5 poppins-bold center-disclaimer">Descarga el reporte completo de la Ciudad de interés, dentro de este podrás obtener a la información detallada de los principales indicadores del mercado, análisis, investigación y más consolidado en un mismo reporte. </p>
+        <!-- Cards de precios -->
+        <div class="row row-cols-1 row-cols-md-3 my-5 py-5 text-center">
+            <div class="col">
+                <div class="card membership-card shadow-sm p-5">
+                <h4 class="havelock-bold membership-name">Free</h4>
+                <div>
+                    <ul class="list-unstyled my-4">
+                        <li class="cringe membership-text">10 users included</li>
+                        <li class="cringe membership-text">2 GB of storage</li>
+                        <li class="cringe membership-text">Email support</li>
+                        <li class="cringe membership-text">Help center access</li>
+                    </ul>
+                    <h1 class="pricing-card-title havelock-bold mb-5">$0/mo</h1>
+                    <a href="#" class="w-100 btn btn-lg btn-obtener rounded-pill poppins-bold">Sign up for free</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card membership-card shadow-sm p-5">
+                <h4 class="havelock-bold membership-name">Pro</h4>
+                <div>
+                    <ul class="list-unstyled my-4">
+                        <li class="cringe membership-text">20 users included</li>
+                        <li class="cringe membership-text">10 GB of storage</li>
+                        <li class="cringe membership-text">Priority email support</li>
+                        <li class="cringe membership-text">Help center access</li>
+                    </ul>
+                    <h1 class="pricing-card-title havelock-bold mb-5">$15/mo</h1>
+                    <a href="#" class="w-100 btn btn-lg btn-obtener rounded-pill poppins-bold">Get started</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card membership-card shadow-sm p-5">
+                <h4 class="havelock-bold membership-name">Enterprise</h4>
+                <div>
+                    <ul class="list-unstyled my-4">
+                        <li class="cringe membership-text">30 users included</li>
+                        <li class="cringe membership-text">15 GB of storage</li>
+                        <li class="cringe membership-text">Phone and email support</li>
+                        <li class="cringe membership-text">Help center access</li>
+                    </ul>
+                    <h1 class="pricing-card-title havelock-bold mb-5">$29/mo</h1>
+                    <a href="#" class="w-100 btn btn-lg btn-obtener rounded-pill poppins-bold">Contact us</a>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    {{ include('footer.html.twig') }}
+
+{% endblock %}
